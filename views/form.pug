@@ -1,0 +1,20 @@
+html 
+    head 
+        title Rahavard Form 
+    body 
+        h1  <em>Welcome to Rahavard Company!</em> 
+        h3  <em>We are proud that you choose us </em>
+        form(action="/api/customer/request-"  method ="POST")
+            div
+                label(for="fullname") Full Name : 
+                input(type="text" name="name")
+            br
+            div 
+                label(for="phone")  <em>Phone Number : </em>
+                input(type="tel" name="phone")
+            br
+            div 
+                label(name="email")  <em>Email: </em>
+                input(type="email" name="email")
+            br
+            button(type="submit") Send         
