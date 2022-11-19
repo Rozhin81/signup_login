@@ -1,0 +1,13 @@
+html 
+    head 
+        title Rahavard Form 
+    body 
+        br 
+        form(action="/login/user"  method ="POST")
+            div 
+                p We sent a code to your phone number
+                label(for="code") Code : 
+                input(type="number" , name="code")
+            br
+            div 
+                button(type="submit") Send 

@@ -1,0 +1,28 @@
+html 
+    head 
+        title Rahavard Form 
+    body 
+        h1  <em>Welcome to Rahavard Company!</em> 
+        h3  <em>Please fill the form to create your account</em>
+        form(action="/sign"  method ="POST")
+            div
+                label(for="name") Name : 
+                input(type="text" name="name")
+            br
+            div 
+                label(for="phone") Phone : 
+                input(type="tel" name="phone")
+            br
+            div 
+                label(for="address") Address : 
+                input(type="text" name="address")
+            br
+            div 
+                label(name="email") Email : 
+                input(type="email" name="email")
+            br
+            div 
+                label(name="image") image : 
+                input(type="file" name="image")
+            br
+            button(type="submit") Send         
